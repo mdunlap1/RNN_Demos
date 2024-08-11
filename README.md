@@ -49,7 +49,8 @@ Before running in the REPL make sure to train a network and save the weights:
 
 Interestingly this code does not duplicate the results from the original paper. Perhaps there is a mistake in the implementation? Or perhaps there was a mistake in theirs? Or perhaps they had an unusually bad run? Here are some typical iteration counts to reach the stopping criteria:
 
-```30187
+```
+30187
 16885
 18585
 24194
@@ -68,7 +69,8 @@ Interestingly this code does not duplicate the results from the original paper. 
 18467
 25792
 27069
-24715```
+24715
+```
 
 ## one_cell_lstm.c
 Implementation of a single memory cell LSTM network and full (not truncated) epochwise back propagation through time. 
