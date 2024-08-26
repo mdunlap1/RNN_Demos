@@ -1169,8 +1169,8 @@ int preliminary_test_against_finite_difference()
     free_rng();
 
     free_network(n);
-    //free_matrix(g);
-    //free_matrix(actual);
+    free_matrix(g);
+    free_matrix(actual);
 
 }
 
