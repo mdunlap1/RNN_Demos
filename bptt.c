@@ -471,10 +471,7 @@ double J_total(double **results,
 }
 
 
-/* Calculates gradient by method of finite differences 
- * NOTE: Requires that the network has already run through the epoch and
- *       stored values for activation_hist and net_out_hist
- */
+/* Calculates gradient by method of finite differences */
 Matrix *finite_difference(Network *n,
                           double **epoch,
                           double **targets,
