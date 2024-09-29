@@ -1137,7 +1137,14 @@ void weight_guessing(int seed)
         for (int i=0; i < window; i++) {
             total_window_error += window_errors[i];
         }
-        double avg_window_error = total_window_error / window;
+
+        double avg_window_error;
+        if (trials < window) {
+            avg_window_error = total_window_error / trials;
+        }
+        else {
+            avg_window_error = total_window_error / window;
+        }
 
         if (correct) {
             streak++;
